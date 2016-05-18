@@ -1,0 +1,25 @@
+/*body{ 
+	padding-top: 70px; 
+}*/
+.navbar{
+	background-color: #2d4059;
+}
+.navbar-brand{
+	padding-top: 7px;
+}
+.navbar-text{
+	color: #ea5455;
+}
+
+.container {
+	height: 600px;
+}
+.footer {
+	background-color: #2d4059;
+	height: 150px;
+}
+.footer p{
+	padding-top: 75px;
+	color: #ffd460;
+}
+
