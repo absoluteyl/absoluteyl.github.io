@@ -1,3 +1,29 @@
-.navbar {
+.header {
+    background-color: #2d4059;
+    height: 768px;
+}
+.navigation {
+    height: 60px;
+}
+.container {
+    height: 768px;  /*can remove after fill in content*/
+}
 
+.copyright {
+    padding: 30px 30px 0px 30px;
+    background-color: #2d4059;
+    height: 90px;
+}
+.disclaimer {
+    margin: 0px;
+    color: #ffd460;
+}
+.contact {
+    float: right;
+}
+.contact li {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: lighter;
 }
