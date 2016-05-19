@@ -24,11 +24,10 @@ body {
     background-color: #2d4059;
     height: 768px;
 }
-.navigation {
-}
+
 .active {
-    background-color: #ffd460;
-    color: #ea5455;
+    background-color: #d8e9f0;
+    color: #f33535;
 }
 .navbar{
     background-color: #2d4059;
@@ -54,6 +53,12 @@ body {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
+  color: #f33535;
+  background-color: #d8e9f0;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
   color: #f33535;
   background-color: #d8e9f0;
 }
