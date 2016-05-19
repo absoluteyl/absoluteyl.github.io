@@ -1,13 +1,99 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+.dropdown-menu {
+    background-color: #2d4059;
+}
+.dropdown-menu > li > a {
+  color: #ea5455;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #f33535;
+  background-color: #d8e9f0;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #f33535;
+  background-color: #d8e9f0;
+}
+
+
 .header {
     background-color: #2d4059;
     height: 768px;
 }
 .navigation {
-    height: 60px;
 }
+.active {
+    background-color: #ffd460;
+    color: #ea5455;
+}
+.navbar{
+    background-color: #2d4059;
+    border: 0px;
+    border-bottom: 1px solid #ea5455;
+    border-radius: 0px;
+}
+.navbar-default .navbar-brand {
+  color: #ea5455;
+  padding: 15px;
+  font-size: 30px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffd460;
+}
+.navbar-default .navbar-text {
+  color: #ea5455;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #ea5455;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #f33535;
+  background-color: #d8e9f0;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #f33535;
+  background-color: #d8e9f0;
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ea5455;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #f33535;
+    background-color: #d8e9f0;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #f33535;
+    background-color: #d8e9f0;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    background-color: #d8e9f0;
+  }
+}
+
+.slider {
+    height: 700px
+}
+
+
 .container {
     height: 768px;  /*can remove after fill in content*/
 }
+
 
 .copyright {
     padding: 30px 30px 0px 30px;
@@ -25,5 +111,12 @@
     color: #fff;
     text-decoration: none;
     display: inline-block;
-    font-weight: lighter;
+}
+.contact a{
+    color: #fff;
+    text-decoration: none;
+}
+.contact a:hover{
+    font-weight: bold;
+    color: #f07b3f;
 }
