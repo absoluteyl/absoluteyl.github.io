@@ -1,5 +1,6 @@
 body {
     font-family: 'Ubuntu', sans-serif;
+
 }
 .dropdown-menu {
     background-color: #2d4059;
@@ -40,6 +41,10 @@ body {
   padding: 15px;
   font-size: 30px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.navbar-default .navbar-brand img{
+  height: 25px;
+  display: inline;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -96,14 +101,16 @@ body {
 
 
 .container {
-    height: 768px;  /*can remove after fill in content*/
+    height: 1000px;  /*can remove after fill in content*/
+    padding-bottom: 100px
 }
-
 
 .copyright {
     padding: 30px 30px 0px 30px;
     background-color: #2d4059;
-    height: 90px;
+    height: 100px;
+    margin-top: -100px;
+    
 }
 .disclaimer {
     margin: 0px;
@@ -120,8 +127,13 @@ body {
 .contact a{
     color: #fff;
     text-decoration: none;
+    padding-left: 5px;
 }
 .contact a:hover{
     font-weight: bold;
     color: #f07b3f;
+}
+.contact img {
+  height: 30px;
+  width: 30px;
 }
