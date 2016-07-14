@@ -7,35 +7,47 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <!-- <script src="js/helper.js"></script> -->
     <title>Elsa Lau</title>
 </head>
 <body>
     <div class="container-fluid">
-        <div class="header">
-            <div class="row">
-                <nav>
-                    <div class="nav-logo col-md-1">Logo</div>
-                <div class="nav-menu col-md-offset-10 col-md-1"><a href="#">Menu</a></div>
-                </nav>
+    <header class="banner">
+        <div id="navbar" class="row">
+            <div class="nav-logo col-md-offset-1 col-md-1">
+                <a href="#">Logo</a>
+            </div>
+            <div class="nav-menu col-md-offset-8 col-md-1">
+                <a href="#">Menu</a>
             </div>
         </div>
-        <div class="menu">
-            <ul>
-                <h3>Menu</h3>
-                <li><a href=""></a>Home</li>
-                <li><a href=""></a>Work</li>
-                <li><a href=""></a>About</li>
-                <li><a href=""></a>Contact</li>
-            </ul>
-        </div>
-        <div class="intro">
-            <div class="intro-background"></div>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <h3>Menu</h3>
+            <li><a href="#">Home</a></li>
+            <li><a href="#recent">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <h3>Social</h3>
+            <div>
+                <a target="_blank" href="https://www.facebook.com/absoluteyl">Facebook</a> /
+                <a target="_blank" href="https://github.com/absoluteyl">Github</a> /
+                <a target="_blank" href="https://www.linkedin.com/in/elsa-lau-8568b7112">LinkedIn</a>
+            </div>
+        </ul>
+    </nav>
+    <section id="intro">
+        <div class="intro-background">
             <div class="intro-content text-center">
                 <h1 class="">I am</h1>
                 <h1>Elsa Lau</h1>
                 <h2>a Rails/iOS Developer</h2>
             </div>
         </div>
+
+    </section>
         <div class="recent text-center">
             <h1 class="recent-title">Ongoing Project</h1>
             <div class="row">
@@ -134,10 +146,7 @@
             <p>© Elsa Lau 2016</p>
         </div>
     </div>
-    <script>
-        $(".nav-menu").click(function(){
-          $(".menu").toggle();
-        });
-    </script>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -3,6 +3,12 @@ body {
     padding: 0px;
     background-color: #3A4750;
 }
+a {
+    text-decoration: none;
+}
 .menu {
-  display: none;
+    display: none;
+}
+.menu ul {
+    list-style-type: none;
 }
