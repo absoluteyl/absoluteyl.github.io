@@ -4,7 +4,7 @@ display:none
 
 body{
 overflow-x:hidden;
-background-color:#1f2024
+background-color:#4e5b6b;
 }
 
 hr{
@@ -22,7 +22,7 @@ text-transform:capitalize
 }
 
 h2{
-text-transform:capitalize;
+/*text-transform:capitalize;*/
 font-size:24px;
 font-weight:400
 }
@@ -176,7 +176,8 @@ color:#fff
 }
 
 .black{
-background-color:#3E92CC;
+  background-color: #92b9b4;
+/*background-color:#3E92CC;*/
 color:#fff
 }
 
@@ -306,7 +307,7 @@ position:fixed;
 z-index:999;
 top:0;
 left:0;
-background:rgba(37,38,42,0.98);
+background: #92b9b4;
 -webkit-transform:translateY(-100px);
 -ms-transform:translateY(-100px);
 transform:translateY(-100px);
@@ -424,7 +425,8 @@ opacity:.5
 
 .overlay:before{
 content:'';
-background:#25262a;
+/*background:#25262a;*/
+background: #4e5b6b;
 left:-55%;
 top:0;
 width:50%;
@@ -436,7 +438,8 @@ transition:left .35s ease
 
 .overlay:after{
 content:'';
-background:#25262a;
+/*background:#25262a;*/
+background: #4e5b6b;
 right:-55%;
 top:0;
 width:50%;
@@ -6822,16 +6825,17 @@ margin-top:400px
 }
 
 #workingon{
-color:#fff;
+/*color:#fff;*/
 position:relative;
 text-align:center;
-background-color:#25262a;
+/*background-color:#25262a;*/
+background-color:#f6f6f6;
 padding-top:100px
 }
 
 #workingon p{
 margin:0 20% 20px 20%;
-color:#d4d4d4
+/*color:#d4d4d4*/
 }
 
 @media screen and (max-width: 500px){
@@ -6903,7 +6907,8 @@ margin:10px auto 10px auto
 
 #about{
 padding-top:100px;
-background-color:#25262a;
+/*background-color:#25262a;*/
+background-color: #4e5b6b;
 text-align:center;
 color:#fff
 }
@@ -6940,7 +6945,8 @@ top:0;
 left:18px;
 height:100%;
 width:4px;
-background:#53555e
+/*background:#53555e;*/
+background: #92b9b4;
 }
 
 @media only screen and (min-width: 420px){
