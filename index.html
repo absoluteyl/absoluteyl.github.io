@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <!-- Bootstrap - Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
     <title>Elsa Lau</title>
 </head>
 <body>
@@ -16,7 +15,7 @@
             <div class="row">
                 <nav>
                     <div class="nav-logo col-md-1">Logo</div>
-                <div class="nav-menu col-md-offset-10 col-md-1">Menu</div>
+                <div class="nav-menu col-md-offset-10 col-md-1"><a href="#">Menu</a></div>
                 </nav>
             </div>
         </div>
@@ -45,7 +44,7 @@
                 </div>
             </div>
             <div class="recent-link">
-                <a href="https://ririkoko.herokuapp.com">View Website</a> 
+                <a href="https://ririkoko.herokuapp.com">View Website</a>
             </div>
         </div>
         <!-- <div class="works"></div> -->
@@ -60,7 +59,7 @@
                 <a class="about-detail" href="#" target="_blank">More About Me</a></div>
                 <a class="about-contact" href="#" target="_blank">Contact Me</a></div>
             </div>
-            
+
             <div class="timeline text-center">
                 <div class="timeline-future work">
                     <div class="timeline-pin"></div>
@@ -135,5 +134,10 @@
             <p>© Elsa Lau 2016</p>
         </div>
     </div>
+    <script>
+        $(".nav-menu").click(function(){
+          $(".menu").toggle();
+        });
+    </script>
 </body>
 </html>
