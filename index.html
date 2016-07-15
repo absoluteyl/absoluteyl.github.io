@@ -14,22 +14,24 @@
     <script async src="js/vendor/modernizr.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
     <script type="text/javascript">
+    <!--
     $(function(){
         var lang = window.navigator.userLanguage || window.navigator.language ;
         var relang=lang.toLowerCase();
         switch (relang){
             case "en":
-            $("#tbody").load("index_en.html");
-            break;
-
-            case "zh-tw":
             $("#tbody").load("index.html");
             break;
 
+            case "zh-tw":
+            $("#tbody").load("index_zhtw.html");
+            break;
+
             default:
-            $("#tbody").load("index_en.html");
+            $("#tbody").load("index.html");
         }
     });
+    //-->
     </script>
     <meta class="foundation-data-attribute-namespace">
     <meta class="foundation-mq-xxlarge">
@@ -57,10 +59,9 @@
                     <div class="navsocial">
                          <a target="_blank" href="https://www.facebook.com/absoluteyl">Facebook</a> /
                         <a target="_blank" href="https://github.com/absoluteyl">Github</a> /
-                        <a target="_blank" href="https://www.linkedin.com/in/elsa-lau-8568b7112">LinkedIn</a> /
-                        <a target="_blank" href="http://absoluteyl.blogspot.tw/">Blogger</a>
+                        <a target="_blank" href="https://www.linkedin.com/in/elsa-lau-8568b7112">LinkedIn</a>
                     </div>
-                    <h3><a href="index_en.html">Switch to English</a></h3>
+                    <h3><a href="index_zhtw.html">English／繁體中文</a></h3>
                 </ul>
             </nav>
         </div>
@@ -82,7 +83,7 @@
                 <div id="cd-intro-tagline">
                     <h1 class="wow fadeInDown" data-wow-duration="1.5s">I am</h1>
                     <h1 class="wow fadeInDown" data-wow-duration="1s">Elsa Lau</h1>
-                    <h2 class="wow fadeInUp" data-wow-duration="2s">A Rails / iOS App Developer</h2>
+                    <h2 class="wow fadeInUp" data-wow-duration="2s">A Rails / iOS Developer</h2>
                 </div>
                 <div id="arrowdown" class="wow fadeInDown" data-wow-delay="2s">
                     <img src="img/arrowdown.png">
@@ -94,14 +95,14 @@
                 <div id="workingon">
                     <div class="row">
                         <div class="large-12 column">
-                            <h1 class="wow fadeInDown" data-wow-duration="1s">進行中專案</h1>
-                            <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".2s">&nbsp;&nbsp;為了實際演練在資策會國際菁英俱樂部所學，我和組員目前正在開發一款名為"RiRiKoKo"(哩哩摳摳)的線上跳蚤市場，並且同時支援網頁及iOS平台。</p>
+                            <h1 class="wow fadeInDown" data-wow-duration="1s">Ongoing Project</h1>
+                            <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".2s">To practise what we've learned in <abbr title="Global Front-end Elite Club">GFEC</abbr>. My teammates and me are working on an online flea market service name "RiRiKoKo" which supports both Web/iOS platforms.</p>
                             <a target="_blank" href="https://ririkoko.herokuapp.com">
                                 <div class="cta black wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                                     前往 RiRiKoKo
+                                     Visit RiRiKoKo
                                 </div>
                             </a>
-                            <img class="wow slideInUp" data-wow-duration="1.5s" src="img/workingprogress/onpixe.jpg" alt="RiRiKoKo flea market">
+                            <img class="wow slideInUp" data-wow-duration="1.5s" src="img/workingprogress/ririkoko.png" alt="RiRiKoKo flea market">
                         </div>
                     </div>
                 </div>
@@ -109,19 +110,17 @@
                 <div id="about">
                     <div class="row">
                         <div class="large-12 columns">
-                            <h1 class="wow fadeInDown" data-wow-duration="1s">關於我</h1>
+                            <h1 class="wow fadeInDown">About Me</h1>
                             <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".2s">
-                            &nbsp;&nbsp;除了Rails及iOS App的開發，我也十分熟悉網路技術及系統管理。<br />
-                            除此之外，我也對學習和體驗新事物充滿熱情，<br />
-                            因為總能在過程當中獲得成就感。
+                                I'm a Rails/iOS Developer which is familiar with networking and system administration. With the passion of learning and experiencing new things are my way to get self accomplishment.
                             </p>
                             <a href="about">
                                 <div class="cta border wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s" style="margin-right: 10px; display: inline-block;">
-                                    更多關於我
+                                    More aboue me
                                 </div>
                             </a>
                             <a href="contact">
-                                <div class="cta white wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s" style="margin-left: 10px; display: inline-block;">與我聯繫</div>
+                                <div class="cta white wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s" style="margin-left: 10px; display: inline-block;">Contact me</div>
                             </a>
                             <section id="cd-timeline" class="cd-container">
                                 <div class="first-pin"></div>
@@ -129,30 +128,30 @@
                                 <div class="cd-timeline-block">
                                     <div class="cd-timeline-pin is-hidden"></div>
                                     <div class="cd-timeline-content is-hidden">
-                                        <h3>繼續學習！</h3>
-                                        <p>未來</p>
+                                        <h3>Keep learning</h3>
+                                        <p>future</p>
                                     </div>
                                 </div>
                                 <div class="cd-timeline-block">
                                     <div class="cd-timeline-pin is-hidden"></div>
                                     <div class="cd-timeline-content is-hidden">
-                                        <h3>成為Rails開發者</h3>
-                                        <p>未來</p>
+                                        <h3>Rails Developer</h3>
+                                        <p>future</p>
                                     </div>
                                 </div>
                                 <div class="cd-timeline-block">
                                     <div class="cd-timeline-pin is-hidden"></div>
                                     <div class="cd-timeline-content is-hidden">
-                                        <h3>進修學習：<br />
-                                        Rails / iOS App/ 敏捷開發</h3>
+                                        <h3>Advanced Studies in <br />
+                                        Rails / iOS / Agile Development</h3>
                                         <p>2016</p>
                                     </div>
                                 </div>
                                 <div class="cd-timeline-block">
                                     <div class="cd-timeline-pin is-hidden"></div>
                                     <div class="cd-timeline-content is-hidden">
-                                        <h3>友訊科技－技術支援工程師</h3>
-                                        <p>2014 - 現在</p>
+                                        <h3>FAE Engineer in D-Link</h3>
+                                        <p>2014 - now</p>
                                     </div>
                                 </div>
                                 <div class="cd-timeline-block">
@@ -161,7 +160,7 @@
                                 <div class="cd-timeline-block">
                                     <div class="cd-timeline-pin is-hidden"></div>
                                     <div class="cd-timeline-content is-hidden">
-                                        <h3>華芸科技－技術支援工程師</h3>
+                                        <h3>FAE Engineer in Asustor</h3>
                                         <p>2013 - 2014</p>
                                     </div>
                                 </div>
@@ -171,29 +170,29 @@
                                 <div class="cd-timeline-block">
                                     <div class="cd-timeline-pin is-hidden"></div>
                                     <div class="cd-timeline-content is-hidden">
-                                        <h3>合勤科技－技術支援工程師</h3>
+                                        <h3>FAE Engineer in Zyxel</h3>
                                         <p>2011 - 2013</p>
                                     </div>
                                 </div>
                                 <div class="cd-timeline-block">
                                     <div class="cd-timeline-pin is-hidden"></div>
                                     <div class="cd-timeline-content is-hidden">
-                                        <h3>進修學習：<br />
-                                        網路技術及系統管理</h3>
+                                        <h3>Advanced Studies in <br />
+                                        Netorking and System Administration</h3>
                                         <p>2011</p>
                                     </div>
                                 </div>
                                 <div class="cd-timeline-block">
                                     <div class="cd-timeline-pin is-hidden"></div>
                                     <div class="cd-timeline-content is-hidden">
-                                        <h3>台灣光罩－製程工程師</h3>
+                                        <h3>Production Engineer in TMC</h3>
                                         <p>2010 - 2011</p>
                                     </div>
                                 </div>
                                 <div class="cd-timeline-block">
                                     <div class="cd-timeline-pin is-hidden"></div>
                                     <div class="cd-timeline-content is-hidden">
-                                        <h3>取得化學系學士學位</h3>
+                                        <h3>Bachelor's Degree in Chemistry</h3>
                                         <p>2010</p>
                                     </div>
                                 </div>
@@ -206,8 +205,7 @@
                         <div class="large-12 columns">
                             <a target="_blank" href="https://www.facebook.com/absoluteyl">Facebook</a> /
                             <a target="_blank" href="https://github.com/absoluteyl">Github</a> /
-                            <a target="_blank" href="https://www.linkedin.com/in/elsa-lau-8568b7112">LinkedIn</a> /
-                            <a target="_blank" href="http://absoluteyl.blogspot.tw/">Blogger</a>
+                            <a target="_blank" href="https://www.linkedin.com/in/elsa-lau-8568b7112">LinkedIn</a>
                             <p>©&nbsp;Elsa Lau&nbsp;2016</p>
                         </div>
                     </div>
@@ -221,6 +219,5 @@
     <script src="js/min/main-min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="slick/slick.min.js"></script>
-
 </body>
 </html>

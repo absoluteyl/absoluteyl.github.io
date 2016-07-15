@@ -7745,8 +7745,8 @@ margin:0 10px
 #aboutpage p a{
 margin:0 10px;
 color:#373c44;
-padding-bottom:5px;
-border-bottom:1px solid #373c44
+padding-bottom:2px;
+border-bottom:1px dashed #333
 }
 
 #lost{
