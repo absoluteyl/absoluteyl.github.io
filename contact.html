@@ -22,7 +22,6 @@
     <meta class="foundation-mq-medium">
     <meta class="foundation-mq-small-only">
     <meta class="foundation-mq-small">
-    <style></style>
 </head>
 <body>
     <div class="animsition" style="animation-duration: 1000ms; opacity: 1;">
@@ -63,21 +62,21 @@
         <main class="cd-content">
             <div class="cd-container">
                 <a id="showHere"></a>
-                <div class="contact">
+                <div id="contact">
                     <div class="row">
                         <div class="large-12 columns">
-                            <h2 class="wow fadeInDown" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInDown;">
+                            <h2 class="wow fadeInDown" data-wow-duration="1s">
                                 Anything want to say?
                             </h2>
-                            <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: fadeIn;">
+                            <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".4s">
                                 If you have any collaborate opportunities or anything in mind, don't hesitate to leave me a message. I'll feedback soon.
                             </p>
-                            <form class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" method="post" action="http://formspree.io/appsoluteyl@gmail.com" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: fadeInUp;">
-                                <input type="text" name="Name" placeholder="Full name" maxlength="40" required="required">
-                                <input type="email" name="_replyto" placeholder="Email address" maxlength="40" required="required">
+                            <form class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" method="post" action="http://formspree.io/appsoluteyl@gmail.com">
+                                <input type="text" name="Name" placeholder="Your full name" maxlength="40" required="required">
+                                <input type="email" name="Email" placeholder="Your mail address" maxlength="40" required="required">
                                 <textarea name="Message" placeholder="Your message" cols="10" rows="8" required="required"></textarea>
                                 <input type="submit" name="submit" value="Send" class="button">
-                                <small>You will receive an answer within 2 workdays</small>
+                                <small>You will receive an answer within 2 workdays.</small>
                             </form>
                         </div>
                     </div>
@@ -99,5 +98,6 @@
     <script src="js/animsition.min.js"></script>
     <script src="js/min/main-min.js"></script>
     <script src="js/foundation.min.js"></script>
+
 </body>
 </html>
