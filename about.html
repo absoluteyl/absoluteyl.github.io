@@ -12,6 +12,25 @@
     <!-- <link rel="stylesheet" href="css/index.css"> -->
     <!-- <script async src="//www.google-analytics.com/analytics.js"></script> -->
     <script async src="js/vendor/modernizr.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        var lang = window.navigator.userLanguage || window.navigator.language ;
+        var relang=lang.toLowerCase();
+        switch (relang){
+            case "en":
+            $("#tbody").load("about_en.html");
+            break;
+
+            case "zh-tw":
+            $("#tbody").load("about.html");
+            break;
+
+            default:
+            $("#tbody").load("about_en.html");
+        }
+    });
+    </script>
     <meta class="foundation-data-attribute-namespace">
     <meta class="foundation-mq-xxlarge">
     <meta class="foundation-mq-xlarge-only">
@@ -24,21 +43,24 @@
     <meta class="foundation-mq-small">
 </head>
 <body>
-    <div class="animsition" style="animation-duration: 1000ms; opacity: 1;">
+<div id="tbody">
+    <div class="animsition">
         <div id="overlay" class="overlay">
             <nav class="overlay-menu">
                 <ul>
                     <h3>Menu</h3>
                     <li><a href="index.html">Home</a></li>
                     <li><a class="linkpup" href="#workingon">Work</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <h3>Social</h3>
                     <div class="navsocial">
                          <a target="_blank" href="https://www.facebook.com/absoluteyl">Facebook</a> /
                         <a target="_blank" href="https://github.com/absoluteyl">Github</a> /
-                        <a target="_blank" href="https://www.linkedin.com/in/elsa-lau-8568b7112">LinkedIn</a>
+                        <a target="_blank" href="https://www.linkedin.com/in/elsa-lau-8568b7112">LinkedIn</a> /
+                        <a target="_blank" href="http://absoluteyl.blogspot.tw/">Blogger</a>
                     </div>
+                    <h3><a href="about_en.html">Switch to English</a></h3>
                 </ul>
             </nav>
         </div>
@@ -65,32 +87,33 @@
                 <div id="aboutpage">
                     <div class="row">
                         <div class="large-12 columns">
-                            <img class="wow fadeInDown" data-wow-duration="1s" alt="profile" src="img/profile.jpg" style="visibility: visible; animation-duration: 1s; animation-name: fadeInDown;">
-                            <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: fadeInDown;">
-                                Hello, pleasure to meet you.
+                            <img class="wow fadeInDown" data-wow-duration="1s" alt="profile" src="img/profile.jpg">
+                            <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".4s">
+                                嗨，很高興認識你！
                             </h2>
-                            <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeIn;">
+                            <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
                                 I'm 29 years old.....blahblahblah.
                             </p>
-                            <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: fadeInDown;">
-                                My <strong>Specialties</strong>
+                            <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".4s">
+                                我的<strong>專長</strong>
                             </h2>
-                            <small class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: fadeIn;">
-                                <strong>Web Dev:</strong> Ruby on Rails, HTML, CSS, JavaScript, jQuery
+                            <small class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
+                                <strong>網站開發:</strong> Ruby on Rails / HTML / CSS / JavaScript / jQuery
                                 <br />
-                                <strong>iOS Dev</strong>
+                                <strong>iOS App開發</strong>
                                 <br />
-                                <strong>Networking:</strong> Broadband Technologies, Wireless, Network Management
+                                <strong>網路技術：</strong> 寬頻通訊技術 / 無線網路 / 網路管理
                                 <br />
-                                <strong>System Administration:</strong> Windows / Linux Server
+                                <strong>系統管理：</strong> Windows / Linux / 網路存儲伺服器 架設與管理
                             </small>
-                            <h2 class="wow fadeInDown" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInDown;">
-                                <strong>Contact</strong> me
+                            <h2 class="wow fadeInDown" data-wow-duration="1s">
+                                與我<strong>聯繫</strong>
                             </h2>
-                            <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: fadeIn;">
+                            <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".4s">
                                 <a target="_blank" href="https://www.facebook.com/absoluteyl">Facebook</a> /
                                 <a target="_blank" href="https://github.com/absoluteyl">Github</a> /
-                                <a target="_blank" href="https://www.linkedin.com/in/elsa-lau-8568b7112">LinkedIn</a>
+                                <a target="_blank" href="https://www.linkedin.com/in/elsa-lau-8568b7112">LinkedIn</a> /
+                                <a target="_blank" href="http://absoluteyl.blogspot.tw/">Blogger</a>
                             </p>
                         </div>
                     </div>
@@ -100,7 +123,8 @@
                         <div class="large-12 columns">
                             <a target="_blank" href="https://www.facebook.com/absoluteyl">Facebook</a> /
                             <a target="_blank" href="https://github.com/absoluteyl">Github</a> /
-                            <a target="_blank" href="https://www.linkedin.com/in/elsa-lau-8568b7112">LinkedIn</a>
+                            <a target="_blank" href="https://www.linkedin.com/in/elsa-lau-8568b7112">LinkedIn</a> /
+                            <a target="_blank" href="http://absoluteyl.blogspot.tw/">Blogger</a>
                             <p>©&nbsp;Elsa Lau&nbsp;2016</p>
                         </div>
                     </div>
@@ -113,5 +137,6 @@
     <script src="js/min/main-min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="slick/slick.min.js"></script>
+</div>
 </body>
 </html>

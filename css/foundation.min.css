@@ -1,4 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
+/*@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+/*@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);vv*/
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
 
 meta.foundation-version{
 font-family:"/5.5.2/"
@@ -75,7 +78,8 @@ body{
 background:#fff;
 color:#4e5b6b;
 cursor:auto;
-font-family:'Quicksand',sans-serif;
+/*font-family:'Quicksand',sans-serif;*/
+font-family: 'Lato', 'cwTeXHei', sans-serif;
 font-style:normal;
 font-weight:400;
 line-height:1.5;

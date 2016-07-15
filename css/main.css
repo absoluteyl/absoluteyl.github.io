@@ -401,8 +401,14 @@ transition:opacity .35s, visibility .35s, width .35s
 }
 
 .overlay h3{
-color:#5c606a;
+/*color:#5c606a;*/
+color: #92b9b4;
 opacity:0
+}
+
+.overlay h3 a {
+    text-decoration: none;
+    color: #92b9b4;
 }
 
 .overlay .navsocial{

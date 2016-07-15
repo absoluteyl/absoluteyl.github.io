@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elsa Lau - Contact</title>
+    <title>Elsa Lau - Rails / iOS Developer</title>
     <meta name="description" content="Rails/iOS Developer">
-    <meta name="keywords" content="Elsa Lau, rails developer, ios developer, web developer, full-stack developer, html, html5, css, css3, javascript, jquery, website, portfolio, Taiwan, Taipei">
+    <meta name="keywords" content="Elsa Lau, rails developer, ios developer, web developer, full-stack developer, html, html5, css, css3, javascript, jquery, website, protfolio, Taiwan, Taipei">
     <link href="img/favicon.png" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -19,15 +19,15 @@
         var relang=lang.toLowerCase();
         switch (relang){
             case "en":
-            $("#tbody").load("contact_en.html");
+            $("#tbody").load("about_en.html");
             break;
 
             case "zh-tw":
-            $("#tbody").load("contact.html");
+            $("#tbody").load("about.html");
             break;
 
             default:
-            $("#tbody").load("contact_en.html");
+            $("#tbody").load("about_en.html");
         }
     });
     </script>
@@ -49,18 +49,17 @@
             <nav class="overlay-menu">
                 <ul>
                     <h3>Menu</h3>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index_en.html">Home</a></li>
                     <li><a class="linkpup" href="#workingon">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about_en.html">About</a></li>
+                    <li><a href="contact_en.html">Contact</a></li>
                     <h3>Social</h3>
                     <div class="navsocial">
                          <a target="_blank" href="https://www.facebook.com/absoluteyl">Facebook</a> /
                         <a target="_blank" href="https://github.com/absoluteyl">Github</a> /
-                        <a target="_blank" href="https://www.linkedin.com/in/elsa-lau-8568b7112">LinkedIn</a> /
-                        <a target="_blank" href="http://absoluteyl.blogspot.tw/">Blogger</a>
+                        <a target="_blank" href="https://www.linkedin.com/in/elsa-lau-8568b7112">LinkedIn</a>
                     </div>
-                    <h3><a href="contact_en.html">Switch to English</a></h3>
+                    <h3><a href="about.html">切換至繁體中文</a></h3>
                 </ul>
             </nav>
         </div>
@@ -77,29 +76,43 @@
                 </div>
             </div>
         </header>
-        <section id="cd-intro" style="height: 450px;">
-            <div id="cd-intro-background" class="bg" style="background-image: url(img/bgs/contact.jpg);">
-            </div>
+        <section id="cd-intro">
+            <div id="cd-intro-background" class="bg" style="background-image: url(img/bgs/about.jpg);"></div>
         </section>
         <main class="cd-content">
             <div class="cd-container">
-                <a id="showHere"></a>
-                <div id="contact">
+                <div id="bg" data-parallax="scroll" data-image-src="img/bgs/about.jpg">
+                </div>
+                <div id="aboutpage">
                     <div class="row">
                         <div class="large-12 columns">
+                            <img class="wow fadeInDown" data-wow-duration="1s" alt="profile" src="img/profile.jpg">
+                            <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".4s">
+                                Hello, pleasure to meet you.
+                            </h2>
+                            <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
+                                I'm 29 years old.....blahblahblah.
+                            </p>
+                            <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay=".4s">
+                                My <strong>Specialties</strong>
+                            </h2>
+                            <small class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
+                                <strong>Web Dev:</strong> Ruby on Rails, HTML, CSS, JavaScript, jQuery
+                                <br />
+                                <strong>iOS App Dev</strong>
+                                <br />
+                                <strong>Networking:</strong> Broadband Technologies, Wireless Network, Network Management
+                                <br />
+                                <strong>System Administration:</strong> Windows / Linux Server / NAS Administration
+                            </small>
                             <h2 class="wow fadeInDown" data-wow-duration="1s">
-                                有話想說？
+                                <strong>Contact</strong> me
                             </h2>
                             <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay=".4s">
-                                &nbsp;&nbsp;如果您有任何合作機會或其他事想與我聯繫，歡迎填寫下面的表單，我會盡快回覆。
+                                <a target="_blank" href="https://www.facebook.com/absoluteyl">Facebook</a> /
+                                <a target="_blank" href="https://github.com/absoluteyl">Github</a> /
+                                <a target="_blank" href="https://www.linkedin.com/in/elsa-lau-8568b7112">LinkedIn</a>
                             </p>
-                            <form class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s" method="post" action="http://formspree.io/appsoluteyl@gmail.com">
-                                <input type="text" name="Name" placeholder="您的大名" maxlength="40" required="required">
-                                <input type="email" name="Email" placeholder="您的電子郵件" maxlength="40" required="required">
-                                <textarea name="Message" placeholder="您的留言" cols="10" rows="8" required="required"></textarea>
-                                <input type="submit" name="submit" value="Send" class="button">
-                                <!-- <small>You will receive an answer within 2 workdays.</small> -->
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -108,8 +121,7 @@
                         <div class="large-12 columns">
                             <a target="_blank" href="https://www.facebook.com/absoluteyl">Facebook</a> /
                             <a target="_blank" href="https://github.com/absoluteyl">Github</a> /
-                            <a target="_blank" href="https://www.linkedin.com/in/elsa-lau-8568b7112">LinkedIn</a> /
-                            <a target="_blank" href="http://absoluteyl.blogspot.tw/">Blogger</a>
+                            <a target="_blank" href="https://www.linkedin.com/in/elsa-lau-8568b7112">LinkedIn</a>
                             <p>©&nbsp;Elsa Lau&nbsp;2016</p>
                         </div>
                     </div>
@@ -121,6 +133,7 @@
     <script src="js/animsition.min.js"></script>
     <script src="js/min/main-min.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="slick/slick.min.js"></script>
 </div>
 </body>
 </html>
