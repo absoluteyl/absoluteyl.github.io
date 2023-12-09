@@ -39,13 +39,7 @@ search: true
 lunr:
   search_within_pages: true
 
-author:
-  name: 'Elsa Y. Lau'
-  avatar: '/assets/images/astro_cat.png'
-  bio: 'Rails Developer, Amateur Climber.'
-  location: 'Taipei, TW.'
-
-footer:
+.links: &links
   links:
     - label: 'LinkedIn'
       icon: 'fab fa-fw fa-linkedin'
@@ -53,6 +47,16 @@ footer:
     - label: 'GitHub'
       icon: 'fab fa-fw fa-github-square'
       url: 'https://github.com/absoluteyl'
+
+author:
+  name: 'Elsa Y. Lau'
+  avatar: '/assets/images/astro_cat.png'
+  bio: 'Rails Developer, Amateur Climber.'
+  location: 'Taipei, TW.'
+  <<: *links
+
+footer:
+  <<: *links
 
 # Build settings
 plugins:
