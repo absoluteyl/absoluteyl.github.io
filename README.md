@@ -1,6 +1,7 @@
 # absoluteyl.github.io
 
-A personal website for absoluteyl hosted on GitHub Pages. Powered by [Jekyll](https://jekyllrb.com/).
+A personal website for absoluteyl hosted on GitHub Pages. Powered by [Jekyll](https://jekyllrb.com/) and [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) Theme.
+
 
 ## Installation
 
