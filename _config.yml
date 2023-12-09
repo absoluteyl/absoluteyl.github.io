@@ -1,3 +1,8 @@
+# Theme
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark"
+# How to configure: https://mmistakes.github.io/minimal-mistakes/docs/configuration/
+
 title: absoluteyl
 email:
 description: >- # this means to ignore newlines until "baseurl:"
@@ -10,7 +15,6 @@ twitter_username: absoluteyl
 github_username:  absoluteyl
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 
