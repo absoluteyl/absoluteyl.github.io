@@ -3,16 +3,50 @@ theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "dark"
 # How to configure: https://mmistakes.github.io/minimal-mistakes/docs/configuration/
 
-title: absoluteyl
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: absoluteyl
-github_username:  absoluteyl
+# Site settings
+title: absoluteyl.
+subtitle: 'Life is about courage and going into the unknown.'
+name: 'Elsa Y. Lau' # Copyright name.
+description: >-
+  Something about coding, climbing and life.
+url: 'https://absoluteyl.me'
+baseurl: ''
+repository: 'absoluteyl/absoluteyl.github.io'
+logo: '/assets/images/logo.png'
+
+# Site Appearance
+breadcrumbs: false
+defaults:
+  # _posts
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: single
+      show_date: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+
+search: true
+lunr:
+  search_within_pages: true
+
+author:
+  name: 'Elsa Y. Lau'
+  avatar: '/assets/images/astro_cat.png'
+  bio: 'Rails Developer, Amateur Climber.'
+  location: 'Taipei, TW.'
+
+footer:
+  links:
+    - label: 'LinkedIn'
+      icon: 'fab fa-fw fa-linkedin'
+      url: 'https://www.linkedin.com/in/elsa-lau-8568b7112/'
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github-square'
+      url: 'https://github.com/absoluteyl'
 
 # Build settings
 plugins:
