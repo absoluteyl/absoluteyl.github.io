@@ -4,11 +4,12 @@ source "https://rubygems.org"
 gem "github-pages", "~> 228", group: :jekyll_plugins
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-include-cache"
 end
 gem "webrick", "~> 1.8"
 
 # Theme
-gem "minimal-mistakes-jekyll", "~> 4.24.0"
+# gem "minimal-mistakes-jekyll", "~> 4.24.0"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
