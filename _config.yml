@@ -1,0 +1,86 @@
+# Theme
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark"
+# How to configure: https://mmistakes.github.io/minimal-mistakes/docs/configuration/
+
+# Site settings
+title: absoluteyl.
+subtitle: 'Life is about courage and going into the unknown.'
+name: 'Elsa Y. Lau' # Copyright name.
+description: >-
+  Something about coding, climbing and life.
+url: 'https://absoluteyl.me'
+baseurl: ''
+repository: 'absoluteyl/absoluteyl.github.io'
+logo: '/assets/images/logo.png'
+
+# Site Appearance
+breadcrumbs: false
+defaults:
+  # _posts
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: single
+      show_date: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+# _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+
+search: true
+lunr:
+  search_within_pages: true
+
+.links: &links
+  links:
+    - label: 'LinkedIn'
+      icon: 'fab fa-fw fa-linkedin'
+      url: 'https://www.linkedin.com/in/elsa-lau-8568b7112/'
+    - label: 'GitHub'
+      icon: 'fab fa-fw fa-github-square'
+      url: 'https://github.com/absoluteyl'
+
+author:
+  name: 'Elsa Y. Lau'
+  avatar: '/assets/images/astro_cat.png'
+  bio: 'Rails Developer, Amateur Climber.'
+  location: 'Taipei, TW.'
+  <<: *links
+
+footer:
+  <<: *links
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+include:
+  - _pages
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
